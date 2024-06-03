@@ -33,6 +33,7 @@
     "network.server.IEntityVelocityUpdateS2CPacket",
     "network.server.IExplosionS2CPacket",
     "network.server.IPlayerPositionLookS2CPacket",
+    "render.MixinCamera",
     "render.MixinHeldItemRenderer",
     "render.MixinLightmapTextureManager",
     "render.MixinWorldRenderer",
@@ -48,6 +49,8 @@
     "maxShiftBy": 10
   },
   "mixins": [
+    "network.INetworkState",
+    "network.server.MixinNetworkState",
     "world.MixinChunk"
   ]
 }

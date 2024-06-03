@@ -49,6 +49,7 @@ import me.earth.earthhack.impl.modules.misc.tracker.Tracker;
 import me.earth.earthhack.impl.modules.movement.antimove.NoMove;
 import me.earth.earthhack.impl.modules.movement.autosprint.AutoSprint;
 import me.earth.earthhack.impl.modules.movement.blocklag.BlockLag;
+import me.earth.earthhack.impl.modules.movement.fastswim.FastSwim;
 import me.earth.earthhack.impl.modules.movement.longjump.LongJump;
 import me.earth.earthhack.impl.modules.movement.nofall.NoFall;
 import me.earth.earthhack.impl.modules.movement.noslowdown.NoSlowDown;
@@ -73,6 +74,7 @@ import me.earth.earthhack.impl.modules.player.timer.Timer;
 import me.earth.earthhack.impl.modules.player.xcarry.XCarry;
 import me.earth.earthhack.impl.modules.render.ambience.Ambience;
 import me.earth.earthhack.impl.modules.render.breakesp.BreakESP;
+import me.earth.earthhack.impl.modules.render.cameraclip.CameraClip;
 import me.earth.earthhack.impl.modules.render.fullbright.Fullbright;
 import me.earth.earthhack.impl.modules.render.holeesp.HoleESP;
 import me.earth.earthhack.impl.modules.render.logoutspots.LogoutSpots;
@@ -176,7 +178,7 @@ public class ModuleManager extends IterationRegister<Module>
         // this.forceRegister(new ElytraFlight());
         // this.forceRegister(new EntityControl());
         // this.forceRegister(new EntitySpeed());
-        // this.forceRegister(new FastSwim());
+        this.forceRegister(new FastSwim());
         // this.forceRegister(new Flight());
         // this.forceRegister(new HighJump());
         // this.forceRegister(new ReverseStep());
@@ -241,6 +243,8 @@ public class ModuleManager extends IterationRegister<Module>
         // this.forceRegister(new Search());
         // this.forceRegister(new Skeleton());
         this.forceRegister(new BreakESP());
+
+        this.forceRegister(new CameraClip());
         // this.forceRegister(new Sounds());
         // this.forceRegister(new Tracers());
         // this.forceRegister(new CameraClip());
